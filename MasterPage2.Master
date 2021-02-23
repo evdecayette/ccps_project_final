@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.master.cs" Inherits="CCPS_Web_Edu_Update.MasterPage2" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="Style/main.css" rel="stylesheet"/>
+    <link href="Style/StyleSheet.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+     <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+     <link href="Style/CSSMaster.css" rel="stylesheet" />
+     <link href="assets/css/tuto.css" rel="stylesheet"> --%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <title>
+        <asp:ContentPlaceHolder ID="title"  runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+          <div class="row">
+             <div class="col-md-12">
+                 <div class="enteteImage">
+                     <img src="Images/Master.jpg" />
+                </div>
+            </div></div>
+            <div class="row">
+                <div class="col-md-12">
+                   <%-- <div ID="wrapper">--%>           
+            <div class ="menu">
+                <ul >
+                     <li runat="server" ><a href ="Acceuil.aspx">ACCUEIL</a></li>
+                     <li runat="server" ><a href ="CCPS_Dashboard.aspx">EDUCATION</a></li>
+                     <li runat="server" ><a href ="Form3.aspx">COMPTABILITE</a></li>  
+                </ul>
+            </div>
+           </div>
+          </div>
+            <%--</div>--%>
+        
+            <%--<div id="couleurGRis"></div>--%>
+ 
+          </header>
+        <br />
+           <br />
+      <br />
+      <div class="col-md-14">
+       <div class="contentMaster2"> 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+       </div>
+      <div class="clear"></div>
+        <div class ="footer" >
+          <div class="row">
+           <div class="col-md-12">
+              <p class="auto-style1 text-center panel-relative" >&copy 2019 Calvary Chapel Port-au-Prince. Touts droits réservés</p>
+          </div>
+         </div>
+        </div>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>

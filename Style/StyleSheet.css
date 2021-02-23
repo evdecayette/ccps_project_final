@@ -1,0 +1,53 @@
+﻿#Content2{
+
+}
+
+#btnTerminer {
+    font-weight: bold;
+    border-radius: 0px 10px 0px 10px;
+    border-width: 3px;
+}
+
+  .auto-style1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+    color: #000000;
+}
+
+.auto-style2 {
+    height: 177px;
+}
+   
+
+ h3 {
+    text-align: center;
+    margin:20px;
+}
+ #wrapper{
+     background-image:url("bdg1.png");
+     background-attachment:fixed;
+     background-position:center;
+     background-repeat:no-repeat;
+     background-size:contain;
+     visibility:visible;
+     enable-background:new;
+     opacity:0.8;
+     width:100%;
+     height:auto;
+ }
+#block {
+    opacity: 0.7;
+    background-image: url("Bin/bdg1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    visibility: visible;
+    enable-background: new;
+    opacity: 0.8;
+}
+
+#lblMenu{
+    font:30px;
+}

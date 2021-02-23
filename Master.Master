@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="CCPS_Web_Edu_Update.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="Style/main.css" rel="stylesheet"/>
+    <link href="Style/StyleSheet.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+    <title>
+    <asp:ContentPlaceHolder id="title" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    </title>
+      <asp:ContentPlaceHolder id="head" runat="server">
+         
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+          <div class="row">
+             <div class="col-md-12">
+                 <div class="enteteImage">
+                     <img src="Images/Master.jpg" />
+                </div>
+            </div></div>
+            <div class="row">
+                <div class="col-md-12">
+                   <%-- <div ID="wrapper">--%>           
+            <div class ="menu">
+                <ul >
+                     <li runat="server" ><a href ="Acceuil.aspx">ACCUEIL</a></li>
+                     <li runat="server" ><a href ="CCPS_Dashboard.aspx">EDUCATION</a></li>
+                     <li runat="server" ><a href ="Form3.aspx">COMPTABILITE</a></li>  
+                </ul>
+            </div>
+           </div>
+          </div>
+            <%--</div>--%>
+        
+            <%--<div id="couleurGRis"></div>--%>
+ 
+          </header>
+        <br />
+           <br />
+  <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+      <div class="col-md-4">
+        <div class="sidebar">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center panel-relative">
+                              <p class="panel-title">Menu</p>
+                            </div>
+                           <div class="panel-body">
+            <p><asp:Button id="btnAddSession" width="172px" text="ADD SESSION" CssClass="Blue" runat="server" OnClick="btnAddSession_Click"/></p>
+            <p><asp:Button id="btnClasse" width="172px" text="AJOUTER CLASSE" CssClass="Blue" runat="server" OnClick="btnClasse_Click"/></p>           
+            <p><asp:Button id="btnSalle" width="172px" text="AJOUTER SALLE" CssClass="Blue" runat="server" OnClick="btnSalle_Click"/></p>
+            <p><asp:Button id="btnJourDeclasse" width="172px" text="AJOUTER JOUR" CssClass="Blue" runat="server" OnClick="btnJourDeclasse_Click"/></p>
+            <p><asp:Button id="btnHeureDeClasse" width="172px" text="HEURE DE CLASSE" CssClass="Blue" runat="server" OnClick="btnHeureDeClasse_Click"/></p>
+            <p><asp:Button id="btnChoixProf" width="172px" text="CHOIX PROFESSEUR" CssClass="Blue" runat="server" OnClick="btnChoixProf_Click"/></p>
+            <p><asp:Button id="btnAnnonce" width="172px" text="AJOUTER ANNONCE" CssClass="Blue" runat="server" OnClick="btnAnnonce_Click"/></p>
+            <p><asp:Button id="btnModifier" width="172px" text="EEDIT SESSION" CssClass="Blue" ToolTip="EDITER INFO SUR SESSION" runat="server" OnClick="btnModifier_Click"/></p>
+            <%--<div class="dropdown">
+             <button class="btn btn-primary dropdown-toggle"  type="button" data-toggle="dropdown">Modifier une page<span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="CreerSession.aspx">Creer Session</a></li>
+                <li><a href="#">Ajouter Classe</a></li>
+                <li><a href="#">Ajouter Salle</a></li>
+                  <li><a href="#">Ajouter Jour</a></li>
+                  <li><a href="#">Heure De Classe</a></li>
+                  <li><a href="#">Choix Professeur</a></li>
+                  <li><a href="#">Ajouter Annonce</a></li>
+              </ul>
+            </div>--%>
+          </div></div></div></div>
+      <div class="col-md-8">
+        <div class="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   </div></div></div></div>
+
+         <div class="clear"></div>
+         <div class ="footer" >
+          <div class="row">
+           <div class="col-md-12">
+             <p class="auto-style1 text-center panel-relative" >&copy 2019 Calvary Chapel Port-au-Prince. Touts droits réservés</p>
+          </div>
+         </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </form>
+</body>
+</html>
